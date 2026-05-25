@@ -8,28 +8,18 @@
       "sidebar": false,
       "toc": false,
       "pagination": false
-    }
-  },
+    },
+ },
+  "user.md":{
+  "type:"page"
+  "title":"راهنمای نقش و کاربر"
+},
+  "underground.md": {
+  "type": "page",
+  "title": "راهنمای تب زیرزمین"
+},
+  "topology.md":{
+  "type":"page",
+  "title":"راهنمای استفاده از توپولوژی"
 
-  "rest": {
-    "type": "page",
-    "title": "REST API",
-    "display": "hidden"
-  },
-  "apis": {
-    "type": "page",
-    "title": "سرویس ها"
-  },
-  "authorization": {
-    "type": "page",
-    "title": "احراز هویت"
-  },
-  "apps": {
-    "type": "page",
-    "title": "ابزارک ها"
-  },
-  "design": {
-    "type": "page",
-    "title": "دیزاین"
-  }
 }
