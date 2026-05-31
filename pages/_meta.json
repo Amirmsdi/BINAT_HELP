@@ -8,18 +8,22 @@
       "sidebar": false,
       "toc": false,
       "pagination": false
-    },
- },
-  "user.md":{
-  "type:"page"
-  "title":"راهنمای نقش و کاربر"
-},
+    }
+  },
+  "user.md": {
+    "type": "page",
+    "title": "راهنمای نقش و کاربر"
+  },
   "underground.md": {
-  "type": "page",
-  "title": "راهنمای تب زیرزمین"
-},
-  "topology.md":{
-  "type":"page",
-  "title":"راهنمای استفاده از توپولوژی"
-
+    "type": "page",
+    "title": "راهنمای تب زیرزمین"
+  },
+  "topology.md": {
+    "type": "page",
+    "title": "راهنمای استفاده از توپولوژی"
+  },
+  "organization.md": {
+    "type": "page",
+    "title": "راهنمای استفاده از سازماندهی"
+  }
 }

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -----------------------------
+   Base / Nextra overrides
+------------------------------*/
+
 .darklight-reference {
   display: none !important;
 }
@@ -18,9 +22,14 @@ em {
   @apply !text-3xl;
 }
 
+.nx-underline {
+  @apply !underline-offset-2;
+}
+
+/* Cards */
 div.nextra-cards.nx-mt-4.nx-gap-4.nx-grid.nx-not-prose > a > span {
   justify-content: end;
-  color: #3861fb;
+  color: #274bdb;
 }
 
 div.nextra-cards.nx-mt-4.nx-gap-4.nx-grid.nx-not-prose
@@ -31,10 +40,7 @@ div.nextra-cards.nx-mt-4.nx-gap-4.nx-grid.nx-not-prose
   @apply rotate-180;
 }
 
-.nx-underline {
-  @apply !underline-offset-2;
-}
-
+/* Steps */
 .nextra-steps {
   padding-left: 0rem !important;
   padding-right: 1.5rem !important;
@@ -53,6 +59,7 @@ div.nextra-cards.nx-mt-4.nx-gap-4.nx-grid.nx-not-prose
   display: flex;
 }
 
+/* Tables */
 .nx-block th:nth-child(2) {
   width: 100%;
 }
@@ -64,4 +71,92 @@ div.nextra-cards.nx-mt-4.nx-gap-4.nx-grid.nx-not-prose
 
 .nextra-card {
   justify-content: space-between !important;
+}
+
+/* -----------------------------
+   Theme tokens
+------------------------------*/
+
+:root {
+  --primary: #6d9f4a;
+  --primary-hover: #5c8a3f;
+  --primary-soft: rgba(109, 159, 74, 0.12);
+
+  --text-link: #3861fb;
+  --text-link-hover: #274bdb;
+
+  --sidebar-active: #6d9f4a;
+  --search-highlight: #6d9f4a;
+}
+
+.dark {
+  --primary: #8ab4ff;
+  --primary-hover: #5f93ff;
+  --primary-soft: rgba(138, 180, 255, 0.15);
+
+  --text-link: #8ab4ff;
+  --text-link-hover: #a6c4ff;
+
+  --sidebar-active: #8ab4ff;
+  --search-highlight: #8ab4ff;
+}
+
+/* -----------------------------
+   Links
+------------------------------*/
+
+a {
+  color: var(--text-link);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-link-hover);
+}
+
+/* -----------------------------
+   Search highlight
+------------------------------*/
+
+mark {
+  background: var(--primary-soft);
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+/* -----------------------------
+   Sidebar active item
+------------------------------*/
+
+.nx-sidebar a[aria-current="page"],
+.nx-sidebar a.active {
+  color: var(--sidebar-active) !important;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   Tabs (FIXED - multiple Nextra versions)
+------------------------------*/
+
+button[role="tab"][aria-selected="true"],
+.nextra-tabs button[aria-selected="true"],
+.nx-tabs button[aria-selected="true"],
+[role="tab"][aria-selected="true"],
+[data-selected="true"] {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: inset 0 -2px 0 var(--primary) !important;
+}
+
+/* Tabs hover */
+button[role="tab"]:hover {
+  color: var(--primary-hover);
+}
+
+* {
+  outline-color: #6d9f4a !important;
+}
+
+[aria-selected="true"] {
+  color: #6d9f4a !important;
 }

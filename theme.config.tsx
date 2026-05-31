@@ -3,11 +3,15 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { Logo } from "./components/logo";
 
 const config: DocsThemeConfig = {
-  logo: <Logo />,
+  logo: (<img
+  src="/logo.jpg"
+  alt="logo"
+  style={{height:32}}/>
+  ),
   project: {
-    link: "https://github.com/paziresh24",
+    link: "https://github.com/Amirmsdi",
   },
-  docsRepositoryBase: "https://github.com/paziresh24/documation",
+  docsRepositoryBase: "https://github.com/Amirmsdi/BINAT_HELP.git",
   footer: {
     component: <></>,
   },
@@ -34,7 +38,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s | پذیرش24",
+      titleTemplate: "%s | بینات",
     };
   },
   themeSwitch: {
