@@ -5,25 +5,29 @@
     "theme": {
       "breadcrumb": false,
       "footer": true,
-      "sidebar": false,
+      "sidebar": true,
       "toc": false,
       "pagination": false
     }
   },
-  "user.md": {
-    "type": "page",
-    "title": "راهنمای نقش و کاربر"
+
+  "user": {
+  
+    "title": "نقش و کاربر"
   },
-  "underground.md": {
-    "type": "page",
-    "title": "راهنمای تب زیرزمین"
+
+  "underground": {
+  
+    "title": "تب زیرزمین"
   },
-  "topology.md": {
-    "type": "page",
-    "title": "راهنمای استفاده از توپولوژی"
+
+  "topology": {
+  
+    "title": "استفاده از توپولوژی"
   },
-  "organization.md": {
-    "type": "page",
-    "title": "راهنمای استفاده از سازماندهی"
+
+  "organization": {
+  
+    "title": "استفاده از سازماندهی"
   }
 }

@@ -3,10 +3,15 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { Logo } from "./components/logo";
 
 const config: DocsThemeConfig = {
-  logo: (<img
+  logo: (<div style={{display:"flex",alignItems:"center",gap:"10px"}}>
+  <img
   src="/logo.jpg"
   alt="logo"
   style={{height:32}}/>
+  <span style={{ fontWeight:"bold",fontSize:"18px"}}>
+    بینات
+  </span>
+  </div>
   ),
   project: {
     link: "https://github.com/Amirmsdi",
